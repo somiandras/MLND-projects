@@ -14093,7 +14093,7 @@ DMMwDMMwjCny/wF2eAYjCf/r7QAAAABJRU5ErkJggg==
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1163e8d90&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11cd63d90&gt;</pre>
 </div>
 
 </div>
@@ -19800,10 +19800,10 @@ SZIkSVKHgUmSJEmSOgxMkiRJktRhYJIkSZKkju8Bsv/vJplFHiQAAAAASUVORK5CYII=
 <p>Almost 72% (0.719) of the variance is explained by the first two principal component, while the first four PC explains 93,14% of the total variance in the data.</p>
 <p><strong>Components:</strong></p>
 <ul>
-<li>The first component has mostly negative weights on the original feautres, except for the relatively low positive weights of Fresh and Frozen. The most dominant feature is Detergents_Paper, followed by Milk and Grocery. This component increases with the decrease in these features (and to a lesser extent with the decrease in Delicatessen), and (loosely) positively correlated to Fresh and Frozen. This component therefore represents the spending on Fresh and Frozen over the rest of the categories, or the lack of spending on the other four categories when we control for Fresh and Frozen.</li>
-<li>The second component is negatively correlated to all features, with Fresh, Frozen and Delicatessen being the most dominant ones. This component therefore mostly indicates the aggregate spending on these three (or lack thereof, as the relationship is inverse between the original features and the component itself).</li>
-<li>The third component has two strongly negative (Fresh and Detergents) and two strongly positive features (Frozen and Delicatessen). These pairs have almost symetrical weights, while the effect of Milk and Grocery is negligable on this component. This component indicates the difference between spending on Fresh + Detergents and Frozen + Delicatessen: the larger the gap between spending on the two pair for a given data point, the higher value this component takes.</li>
-<li>The fourth component is mostly dominated by the positive weight of Frozen, somewhat offset by the negative weight of Delicatessen and Fresh. Detergents has slight positive effect on the component, while the remaining features has negligable weights. This component therefore mostly indicates the level of spending on Frozen, compared to spending on Detergents and Fresh.</li>
+<li>The first component has mostly negative weights on the original feautres, except for the relatively low positive weights of Fresh and Frozen. The most dominant feature is Detergents_Paper, followed by Milk and Grocery. This component increases (in absolute terms) with the decrease in these features (and to a lesser extent with the decrease in Delicatessen), and therefore represents the difference in spending on Fresh and Frozen and the rest of the categories (the higher the value of the component in absolute terms, the larger the "extra" spending on Fresh and Frozen products over the other categories).</li>
+<li>The second component is negatively correlated to all features, with Fresh, Frozen and Delicatessen being the most dominant ones. This component therefore mostly indicates the aggregate spending on these three (the higher absolute value of the component indicates lower spending on these categories due to the negative correlation).</li>
+<li>The third component has two strongly negatively correlated (Fresh and Detergents) and two strongly positively correlated features (Frozen and Delicatessen). These pairs have almost symmetrical weights, while the effect of Milk and Grocery is negligable on this component. This component indicates the difference between spending on Fresh + Detergents and Frozen + Delicatessen.</li>
+<li>The fourth component is mostly dominated by the positive weight of Frozen, and to a lesser extent the negative weight of Delicatessen and Fresh. Detergents has slight positive effect on the component, while the remaining features has negligable weights. This component therefore mostly indicates the level of spending on Frozen, compared to spending on Detergents and Fresh.</li>
 </ul>
 
 </div>
@@ -20062,7 +20062,7 @@ SZIkSVKHgUmSJEmSOgxMkiRJktRhYJIkSZKkju8Bsv/vJplFHiQAAAAASUVORK5CYII=
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x114f2af90&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11b493d90&gt;</pre>
 </div>
 
 </div>
