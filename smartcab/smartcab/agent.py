@@ -70,7 +70,7 @@ class LearningAgent(Agent):
         # With the hand-engineered features, this learning process gets entirely negated.
         
         # Set 'state' as a tuple of relevant data for the agent
-        inputs = tuple(v for k, v in inputs.items())      # Turning it into hashable datatype to be able to use as dictionary key
+        inputs = tuple(v for k, v in inputs.items() if k != 'right')      # Turning it into hashable datatype to be able to use as dictionary key
         state = (waypoint, inputs)
         return state
 
